@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="UnIVAL">
+  <meta name="keywords" content="UnIVAL">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UnIVAL</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body publication-header">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2">UnIVAL: Unified Model for Image, Video, Audio and Language Tasks</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=en&user=lhp9mRgAAAAJ&view_op=list_works&sortby=pubdate">Mustafa Shukor<sup>a</sup></a>, 
+            </span>
+            <span class="author-block">
+              <a href="https://cdancette.fr/">Corentin Dancette<sup>a</sup></a>, 
+            </span>
+            <span class="author-block">
+              <a href="https://alexrame.github.io/">Alexandre Rame<sup>a</sup></a>, 
+            </span>
+            <span class="author-block">
+              <a href="https://cord.isir.upmc.fr/">Matthieu Cord<sup>a,b</sup></a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">a) Sorbonne University  &nbsp; &nbsp;  b) Valeo.ai &nbsp; </span>
+          </div>
+
+          <!-- <div class="is-size-10 publication-authors">
+            (*Equal contribution)
+          </div> -->
+          
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://openreview.net/forum?id=4uflhObpcp&referrer=%5BTMLR%5D(%2Fgroup%3Fid%3DTMLR)"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>soon</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/mshukor/UnIVAL"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>soon</span>
+                  </a>
+              </span>
+
+              <!-- <span class="link-block">
+                <a href="https://"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src = "static/images/colab-logo.svg" alt="colab-logo"/>
+                  </span>
+                  <span>Colab</span>
+                  </a>
+              </span> -->
+
+
+              <span class="link-block">
+                <a href="https://huggingface.co/spaces/mshukor/UnIVAL"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src = "static/images/hf-logo.svg" alt="hf-logo"/>
+                  </span>
+                  <span>soon</span>
+                  </a>
+              </span>
+
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="#BibTeX"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span>BibTex</span>
+                  </a>
+              </span>
+
+              <!-- <span class="link-block">
+                <a href="https://twitter.com/MustafaShukor1/status/1680902461362429955?s=20"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src = "static/images/twitter.svg" alt="twitter-logo"/>
+                  </span>
+                  <span>Thread</span>
+                  </a>
+              </span> -->
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div align="center" style="margin-top:0px; margin-bottom:0px;">
+  <div class="teaser-padding">
+    <div class="hero-body">
+      <div class="container">
+        <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+
+        <figure class="teaser">
+          <img class="teaser-image" style='height: auto; width: 60%; object-fit: contain' src="static/images/unival.gif"/>
+          <!-- <figcaption class="teaser-overlay">
+            <div class="teaser-meta">
+              <span class="teaser-title">This is.</span>
+              <p class="teaser-description">Lilith is .</p>
+            </div>
+          </figcaption> -->
+        </figure>
+
+          <!-- <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+              <source type="video/mp4" src="static/videos/teaser_video_1_compressed.mp4" />
+            </video>
+          </div> -->
+        
+        <!-- </div> -->
+      </div>
+      <!-- <div align="center" style="margin-top:0px; margin-bottom:0px;"> -->
+      <h3 class="subtitle has-text-centered">
+        <font size="3">
+  
+          <span class="dnerf"></span>
+          UnIVAL model. Our sequence-to-sequence model unifies the architecture, tasks, input/output format, and 
+          training objective (next token prediction). UnIVAL is pretrained on image and video-text tasks and can be 
+          finetuned to tackle new modalities (audio-text) and tasks (text-to-image generation) that were not used during pretraining.
+        </font>
+      </div>
+      </h3>
+    <!-- </div> -->
+    </div>
+  </div>
+</div>  
+
+<!-- <div align="center" style="margin-top:0px; margin-bottom:0px;">
+  <div class="carousel-teaser-padding">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/teaser_video_0_compressed.mp4" /> 
+            </video>
+          </div>
+
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+              <source type="video/mp4" src="static/videos/teaser_video_4_compressed.mp4" /> 
+            </video>
+          </div>
+
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+              <source type="video/mp4" src="static/videos/teaser_video_2_compressed.mp4" />
+            </video>
+          </div>
+
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+              <source type="video/mp4" src="static/videos/teaser_video_3_compressed.mp4" />
+            </video>
+          </div>
+
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+              <source type="video/mp4" src="static/videos/teaser_video_1_compressed.mp4" />
+            </video>
+          </div>
+        
+        </div>
+      </div>
+      <h3 class="subtitle has-text-centered">
+          <font size="4">
+          <span class="dnerf"></span>
+          Without explict supervision, Diffusion Features can find correspondences on real images across instances, categories, and even domains.
+        </font>
+      </h3>
+    </div>
+  </div>
+</div>  -->
+
+
+<section class="section grey">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large Language Models (LLMs) have made the ambitious quest for generalist agents significantly far from being a fantasy. 
+            A key hurdle for building such general models is the diversity and heterogeneity of tasks and modalities. 
+            A promising solution is to unify models, allowing the support of a myriad of tasks and modalities while scaling easily. 
+            While few large models (e.g., Flamingo (Alayrac et al., 2022)), trained on massive datasets, can support more than two 
+            modalities, current small to mid-scale unified models are still limited to 2 modalities (e.g., image-text, or video-text). 
+            The question that we ask is: <strong><i>is it possible to build efficiently a unified model that can support all modalities?</i></strong> 
+            To answer this, we propose UnIVAL, a step further towards this ambitious goal. Without relying on fancy datasets sizes or 
+            models with billions of parameters, the ~ 0.25B parameter UnIVAL model goes beyond two modalities and <strong>unifies text, images, 
+            video, and audio into a single model</strong>. Our model is efficiently pretrained on many tasks, based on <strong>task balancing and 
+            multimodal curriculum learning</strong>. UnIVAL shows competitive performance to existing state-of-the-art approaches, 
+            across image and video-text tasks. The representation learned from image and video-text modalities,  allows the model to 
+            achieve competitive performance to SoTA when finetuned on audio-text tasks, despite not being pretrained on audio. 
+            Thanks to the unified model, we propose a novel study on <strong>multimodal model merging</strong> via weight interpolation of models 
+            trained on different multimodal tasks, showing their benefits for out-of-distribution generalization. 
+            We motivate unification by showing the <strong>synergy between tasks</strong>. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<br>
+<br>
+
+<section class="section">
+  <div class="columns is-centered">
+    <div class="column is-four-fifths">
+      <h3 class="title is-3">Findings and Contributions</h3>
+      <div class="content has-text-justified">
+        <p>
+          <ul>
+          <li>To the best of our knowledge, UnIVAL is the first model, with unified architecture, vocabulary,
+            input/output format, and training objective, that is able to tackle image, video, and audio lan-
+            guage tasks, without relying on large scale training or large model size. Our 0.25B parameter
+            model achieves competitive performance to existing modality-customized work. With comparable
+            model sizes, we achieves new SoTA on some tasks (e.g. +1.4/+0.98/+0.46 points accuracy on
+            RefCOCO/RefCOCO+/RefCOCOg Visual Grounding, +3.4 CIDEr on Audiocaps).</li>
+
+          <li>We show the benefits of multimodal curriculum learning with task balancing, for efficiently training
+            the model beyond two modalities.</li>
+      
+          <li>We show the importance of multitask pretraining, compared to the standard single task one, and
+            study the synergy and knowledge transfer between pretrained tasks and modalities. In addition,
+            we find that pretraining on more modalities makes the model generalizes better to new ones. In
+            particular, without any audio pretraining, UnIVAL is able to attain competitive performance to
+            SoTA when finetuned on audio-text tasks.</li>
+      
+          <li>We propose a novel study on multimodal model merging via weight interpolation. We show that, thanks to our unified pretraining
+            and model, when the model is finetuned on different multimodal tasks, weight interpolation can
+            effectively combine the skills of different finetuned weights and improve generalization, creating more
+            robust multitask models without any inference overhead. Thus, in addition to multitask pretraining,
+            averaging differently finetuned weights is another way to leverage and recycle the diversity of multimodal tasks, 
+            enabling their collaboration. This is the first study of weight
+            interpolation showing its effectiveness with multimodal foundation models.</li>
+
+        </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Method -->
+<section class="section grey">
+  <div class="columns is-centered has-text-centered">
+    <h3 class="title is-3 margin-bottom-8">Unification of UnIVAL </h3>
+  </div>
+  
+  <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+
+          
+          <!-- <figure class="teaser">
+            <div align="center" style="margin-top:0px; margin-bottom:0px;"></div>
+            <img class="teaser-image" style='height: auto; width: 50%; object-fit: contain;' src="static/images/arch.jpg"/>
+          </figure> -->
+
+
+          <p> 
+            UnIVAL is unified along 4 axes:
+            <br>
+            <br>
+            <strong>Unified model/architecture:</strong> we use the same model during pretraining and
+            finetuning of all tasks, without any task-specific heads. Our model's core is a LM designed to process abstract representations. 
+            We employ <strong> an encoder-decoder transformer</strong> as LM, due to its effectiveness for multimodal tasks and zero-shot 
+            generalization after multitask training. The LM is enhanced with <strong>lightweight modality-specific projections/encoders</strong> 
+            that enable the mapping of different modalities to a shared and more abstract
+            representation space. Each encoder extracts a feature map, which
+            is then flattened to generate a sequence of tokens. These tokens are linearly projected to match the input
+            dimension of the LM. In our approach, we opt for CNN encoders as they scale effectively with high-resolution inputs, 
+            minimize the number of output tokens, and exhibit improved efficiency during both inference and training compared to transformers.
+            
+            <br>
+            <br>
+            <strong>Unified input/output format:</strong>  the input/output of all tasks consists of a sequence of tokens, where we use a unified vocabulary that contains
+            text, location, and discrete image tokens.
+            <br>
+            <br>
+            <strong>Unified pretraining tasks:</strong> to train a single model on many tasks, a unified representation of these tasks is necessary. 
+            We transform all tasks into a sequence-to-sequence format, where each task is specified by
+            a textual prompt (e.g., "What does the video describe?" for video captioning). For pretraining tasks, we
+            pretrain on many relatively small public datasets.
+            <br>
+            <br>
+            <strong>Unified training objective:</strong> We optimize the model for conditional next token prediction. Specifically, we only use a cross-entropy loss.
+          
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+  <br>
+
+</section>
+
+
+<!-- ############ -->
+<section class="section hero is-small">
+  <div class="columns is-centered has-text-centered">
+    <h2 class="title is-3">Experiments</h2>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p> We evaluate the model on several multimodal tasks such as: Image/Video/Audio Captioning, Image/Video QA, Visual Grounding, Visual Entailment and Text-to-Image Generation. 
+            In the following we present only few results, including some results on multimodal model merging.</p>
+        </div>
+      </div>
+  </div>
+  
+  <figure class="teaser center">
+    <div align="center" style="margin-top:0px; margin-bottom:0px;">
+      <img class="teaser-image" style='height: auto; width: 40%; object-fit: contain' src="static/images/vg.png"/>
+      <figcaption class="teaser-overlay">
+        <div class="teaser-meta">
+          <span class="teaser-title"><i>Finetuning for Visual Grounding on RefCOCO, RefCOCO+, and RefCOCOg datasets. UnIVAL
+            achieves the new SoTA results among comparable model sizes.</i></span>
+        </div>
+      </figcaption>
+    </div>
+  </figure>
+
+<br>
+<br>
+
+
+
+<!-- ############ -->
+
+
+<figure class="teaser center">
+  <div align="center" style="margin-top:0px; margin-bottom:0px;">
+    <img class="teaser-image" style='height: auto; width: 40%; object-fit: contain' src="static/images/vidcap.png"/>
+    <figcaption class="teaser-overlay">
+      <div class="teaser-meta">
+        <span class="teaser-title"><i>Finetuning for Video Captioning on MSRVTT dataset. UnIVAL is competitive
+          with other task/modality-customized SoTA that are trained on larger datasets.</i></span>
+      </div>
+    </figcaption>
+  </div>
+</figure>
+
+<br>
+<br>
+<!-- ############ -->
+
+
+<figure class="teaser center">
+  <div align="center" style="margin-top:0px; margin-bottom:0px;">
+  <img class="teaser-image" style='height: auto; width: 30%; object-fit: contain' src="static/images/audiocap.png"/>
+  <figcaption class="teaser-overlay">
+    <div class="teaser-meta">
+      <span class="teaser-title"><i>Finetuning on the new audio-text modality for audio-captioning. We compare UnIVAL to other audio-text
+        models on Audiocaps and Clotho v1 datasets. Despite not using audio-text during pretraining, UnIVAL is very competitive
+        with other customized SoTA. We compare with models that rely only on audio as input. The best and next best scores are
+        bolded and underlined respectively.</i></span>
+    </div>
+  </div>
+  </figcaption>
+</figure>
+<br>
+<br>
+<!-- ############ -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <div class="content has-text-justified">
+      <p> 
+        We also evaluate UnIVAL without finetuning on seen and unseen datasets:
+      </p>
+    </div>
+  </div>
+</div>
+
+<figure class="teaser center">
+  <div align="center" style="margin-top:0px; margin-bottom:0px;">
+  <img class="teaser-image" style='height: auto; width: 30%; object-fit: contain' src="static/images/noft.png"/>
+  <figcaption class="teaser-overlay">
+    <div class="teaser-meta">
+      <span class="teaser-title"><i>Evaluation without finetuning. UnIVAL
+        outperforms OFA and competitive with Unified-IO trained
+        on more data.</i></span>
+    </div>
+  </figcaption>
+</div>
+</figure>
+<br>
+<figure class="teaser center">
+  <div align="center" style="margin-top:0px; margin-bottom:0px;">
+  <img class="teaser-image" style='height: auto; width: 30%; object-fit: contain' src="static/images/zs.png"/>
+  <figcaption class="teaser-overlay">
+    <div class="teaser-meta">
+      <span class="teaser-title"><i>Zero-Shot Evaluation. Scores in gray means the
+        dataset is used during pretraining. UnIVAL is competitive with
+        modality-specific models.</i></span>
+    </div>
+  </figcaption>
+</div>
+</figure>
+
+<br>
+<br>
+<!-- ############ -->
+
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <div class="content has-text-justified">
+      <p> Now we present the results on multimodal model merging. Specifically, we average and interpolate between models trained on different multimodal tasks.</p>
+    </div>
+  </div>
+</div>
+
+<figure class="teaser center">
+  <div align="center" style="margin-top:0px; margin-bottom:0px;">
+  <img class="teaser-image" style='height: auto; width: 40%; object-fit: contain' src="static/images/weight_interpolation.png"/>
+  <figcaption class="teaser-overlay">
+    <div class="teaser-meta">
+      <span class="teaser-title"><i>Weight interpolation between models trained on different multimodal tasks.</i></span>
+    </div>
+  </figcaption>
+</div>
+</figure>
+
+<!-- ############ -->
+
+<figure class="teaser center">
+  <div align="center" style="margin-top:0px; margin-bottom:0px;">
+  <img class="teaser-image" style='height: auto; width: 40%; object-fit: contain' src="static/images/id_ood_wa.png"/>
+  <figcaption class="teaser-overlay">
+    <div class="teaser-meta">
+      <span class="teaser-title"><i>Finetuning for OOD. We uniformly average the models finetuned on 4 image-text tasks and evaluate the resulting
+        model on the same (ID) and new (OOD) tasks.</i></span>
+    </div>
+  </figcaption>
+</div>
+</figure>
+
+<!-- ############ -->
+
+<br>
+<br>
+</section>
+
+
+
+
+
+<br>
+<br>
+
+<section class="section hero is-small">
+  <div class="columns is-centered has-text-centered">
+    <h2 class="title is-3">Qualitative Results</h2>
+  </div>
+  <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p> Some qualitative results on image-text tasks.</p>
+        </div>
+      </div>
+    </div>
+  <div class="carousel-homography-padding">
+    <div class="hero-body carousel-body-vert-padding">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-toby">
+            <img style='height: auto; width: 100%; object-fit: contain' src="static/images/vg.jpg" alt="edit_propagation">
+          </div>
+
+          <div class="item item-toby">
+            <img style='height: auto; width: 100%; object-fit: contain' src="static/images/caption.jpg" alt="edit_propagation">
+          </div>
+        
+          <div class="item item-toby">
+            <img style='height: auto; width: 100%; object-fit: contain' src="static/images/vqa.jpg" alt="edit_propagation">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+<br>
+
+
+
+<section class="section grey">
+  <div class="columns is-centered">
+    <div class="column is-four-fifths">
+      <h3 class="title is-3">Acknowledgements</h3>
+      <div class="content has-text-justified">
+        <p>
+          This work was supprted by HPC resources of CINES and GENCI. The authors would like to thank the staff of CINES for technical support in managing the Adastra GPU cluster, in particular; Jean-Christophe Penalva, Johanne Charpentier, Mathieu Cloirec, 
+          Jerome Castaings, Gérard Vernou, Bertrand Cirou and José Ricardo Kouakou.
+          This work was also partly supported by ANR grant VISA DEEP (ANR-20-CHIA-0022).
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+ <br>
+
+
+<section class="section" id="BibTeX">
+  <div class="columns is-centered">
+    <div class="column is-four-fifths">
+      <h3 class="title is-3">BibTeX</h3>
+    </div>
+ </div>
+  <div class="container is-max-desktop content">
+    <pre><code>
+Soon     
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div align="center" class="container">
+    <div class="columns is-centered">
+        <div class="content">
+          <font size="1">
+            This website is borrowed from <a href="https://diffusionfeatures.github.io/">diffusionfeatures</a>.
+          </font>
+        </div>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>
